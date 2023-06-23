@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PKO.YY.-.#####",
+ "creation": "2022-07-23 17:28:49.336239",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "instruction",
+  "qty",
+  "portion_size",
+  "qty_for_warehouse"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "instruction",
+   "fieldtype": "Select",
+   "label": "Instruction",
+   "options": "\nTop & Pack",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "label": "Qty.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "portion_size",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Slice Cut",
+   "options": "\n1x8\n2x8\n3x8\n4x8\n5x8\n6x8\n7x8\n8x8\n9x8\n10x8\n11x8\n12x8\n13x8\n14x8\n15x8\n16x8\n17x8\n18x8\n19x8\n20x8\n21x8\n22x8\n23x8\n24x8\n25x8\n26x8\n27x8\n28x8\n29x8\n30x8"
+  },
+  {
+   "fieldname": "qty_for_warehouse",
+   "fieldtype": "Link",
+   "label": "Qty For Warehouse",
+   "options": "Warehouse"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-23 19:53:25.883175",
+ "modified_by": "Administrator",
+ "module": "Doublem-addon",
+ "name": "Packing Order Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

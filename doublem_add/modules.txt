@@ -1,1 +1,1 @@
-Addon for doublem app
+Doublem-addon
